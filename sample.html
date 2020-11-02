@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script lang="javascript">
+        function button_click() {
+            //alert("The buttone was clicked"); --This will make have a pop up users will have to ok
+            console.log("the button was clicked");
+        }
+        function Fred2Wilma() {
+            let fred = document.getElementById("fred").value;
+            document.getElementById("wilma").value = fred;
+        }
+    </script>
+</head>
+
+<body>
+    <!-- The Table Tags -->
+    <table>
+        <thead></thead>
+
+            <tr>
+                <td>Name</td>
+                <td>Color</td>
+                <td>Number</td>
+            </tr>
+        </thead>
+        <td>Elena</td>
+        <td>Blue</td>
+        <td>12</td>
+        </tr>
+        </tr>
+        <td>Sarah</td>
+        <td>Silver</td>
+        <td>9</td>
+        </tr>
+        </tr>
+        <td>Marc</td>
+        <td>Azure</td>
+        <td>18</td>
+        </tr>
+    </table>
+    <!-- The Hx Tags -->
+    <h1>My Sample html page</h1>
+    <h1>My Sample h1>
+        <h2>My Sample h2</h2>
+        <h3>My Sample h3</h3>
+        <h4>My Sample h4</h4>
+        <h5>My Sample h5</h5>
+        <h6>My Sample h6</h6>
+
+        <!--  The Select/Option Tags -->
+        <p>
+            <span>Pick the state: </span>
+            <select>
+                <option value="OH">Ohio</option>
+                <option value="KY">Kentucky</option>
+                <option value="IN" selected>Indiana</option>
+
+            </select>
+        </p>
+        <!-- The Input Tag -->
+        <P>
+            <span>Enter your name: </span>
+            <input id="fred" type="text" value="Fred">
+            <button onclick="Fred2Wilma()">Fred to Wilma</button>
+            <input id="wilma" type="text" value="Wilma">
+
+
+        </P>
+        <!-- The Buttone Tag -->
+        <button onclick="button_click()">Click Me!</button>
+        <!--The Anchor Tag  -->
+        <a target="_blank" href="http://maxtrain.com">MAX Technical Training</a>
+</body>
+
+</html>
